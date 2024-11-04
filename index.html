@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışma Saati Sayaç</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Çalışma Saati Sayaç</h1>
+    <h3>Toplam Çalışma Saatleri:</h3>
+    <div id="workSummary">Yükleniyor...</div>
+    <div>
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" placeholder="Kullanıcı adınızı girin">
+    </div>
+    <h2 id="timer">00:00:00</h2>
+    <div class="buttons">
+        <button onclick="startTimer()">Başlat</button>
+        <button onclick="stopTimer()">Durdur</button>
+        <button onclick="saveTime()">Zamanı Kaydet</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
